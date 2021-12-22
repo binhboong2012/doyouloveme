@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            width: auto;
+            height: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>Do you love me?</h2>
+<button type="button" id='yes' value="Yes" onclick="alert('I <3 you too')">Yes</button>
+<button type="button" id='no' value="No" onmouseover="not()" style="position: relative; left: 0; top: 0;">No</button>
+<script>
+    function not() {
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let y = Math.floor(Math.random() * window.innerHeight);
+        document.getElementById('no').style.left = x + 'px';
+        document.getElementById('no').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
